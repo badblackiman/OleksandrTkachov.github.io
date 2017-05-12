@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+02
+<html>
+03
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="js/script.js"></script>
+    04
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    05
+    <!--
+    06
+    <link rel="stylesheet" type="text/css" href="tmp.css" />
+    07
+    -->
+    08
+    <style type="text/css">
+        09
+        #login-block {
+            10
+            width:100px;
+            11
+            height:100px;
+            12
+            background:#ссс;
+            13
+            position:absolute;
+            14
+            left:0;
+            15
+            top: 0;
+            16
+        }
+        17
+        #login-block.off {
+            18
+            top:-100px;
+            19
+        }
+        20
+    </style>
+    21
+    <script type="text/javascript">
+			22
+			$(document).ready(function () {
+				23
+				$('#show-reg-form').click(function () {
+					24
+					$('#login-block').toggleClass('off');
+					25
+				});
+				26
+			});
+			27
+    </script>
+    28
 </head>
+29
 <body>
-
+30
+<div  id="login-block" class='off'> Скрытый блок
+    31
+</div>
+32
+<a id="show-reg-form">Трансформировать</a>
+33
 </body>
+34
 </html>
