@@ -14,7 +14,7 @@ function expoN(num,expo) {
 	"use strict";
 	var i,
 			x = num;
-	for (i=1; i < expo; i++){
+	for (i=1; i < expo; i+=1){
 		x *= num;
 	}
 	return x;
@@ -42,12 +42,12 @@ function namE() {
 	var i,
 			nameY,
 			nameN = [];
-	for ( i=5; i > 0; i--) {
+	for ( i=5; i > 0; i-=1) {
 		nameN.push(prompt('Enter any name'));
 	}
 	nameY = prompt('Enter Your name');
 	function search() {
-		for (i=0; i < 5; i++){
+		for (i=0; i < 5; i+=1){
 			if (nameN[i] === nameY) {
 				alert("Здравствуйте "+ nameY +", вы успешно вошли!");
 				return;
