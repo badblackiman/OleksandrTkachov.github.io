@@ -3,7 +3,7 @@
 function integer(text) {
 	"use strict";
 	var a = +prompt(text);
-	while ((a ^ 0) !== a){
+	while ((a % 1) !== 0){
 		alert ('Enter an integer!');
 		a = +prompt(text);
 	}
@@ -42,7 +42,7 @@ function namE() {
 	var i,
 			nameY,
 			nameN = [];
-	for ( i=5; i > 0; i-=1) {
+	for (i=5; i > 0; i-=1) {
 		nameN.push(prompt('Enter any name'));
 	}
 	nameY = prompt('Enter Your name');
