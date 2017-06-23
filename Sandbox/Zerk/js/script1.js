@@ -1,9 +1,10 @@
+'use strict';
+console.log ("Задачи из слайда первого вебинара");
 /*Написать функцию reverseString(str) которая получает строку и возвращает ее зеркальную(перевернутую) версию
 reverseString("hello"); возвратит "olleh"
 reverseString("Howdy"); возвратит "ydwoH"
 reverseString("Greetings from Earth"); возвратит "htraE morf sgniteerG"
 */
-'use strict';
 function reverseString(a) {
   var arr=a.split('');
   var rra = [];
