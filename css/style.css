@@ -134,6 +134,6 @@ background: transparent;
 }
 .footerFon{
     height: 186px;
-    margin-top: -186px
+    margin-top: -186px;
     background: url("../img/bottom1.jpg") center no-repeat;
 }
