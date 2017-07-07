@@ -86,7 +86,10 @@ article > p{
     font-size: 15px;
     text-indent: 20px;
 }
-
+#gallery img:focus ~ #zakryt {
+z-index: 2;
+background: transparent;
+}
 #gallery {
     position: relative;
     padding-top: 50%;
